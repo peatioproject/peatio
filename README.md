@@ -1,16 +1,14 @@
 SPECS:
 =====================================
 
-•Ultra specs: 300gb SSD, 4x 2.20 ghz and 96 gb ram
+- Four cores
+- 12 GB 
+- 300 GB SSD
+- Ubuntu 16.04
 
-An open-source crypto currency exchange
+Curriculum
 =====================================
 
-### Introduction 
-   welcome to the most advanced peatio release available .also various UI and visual fixes have been added
-   (more to come) and a market making system which will provide a trading partner for your users.
-   please feel free to post issues and they will be handled rapidly.
-
-### Install
-•wget https://raw.githubusercontent.com/scatterp/peatio/master/install1.sh
-•source install1.sh 
+- Section 1: Peatio Introduction & Installation
+- Section 2: Peatio Configuration & Problem Solve
+- Section 3: Peatio Cryptocurrency Exchange Adding New Coin & Mainnet Connect
