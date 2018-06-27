@@ -1,8 +1,8 @@
 #!bin/bash
 sudo apt-get update
 sudo apt-get upgrade -y
-wget https://gist.githubusercontent.com/scatterp2/3f6b1ae1965de18057a896bedc9a6132/raw/cb230dc8b9cc5dab6da64f7e34cf5e50ae373092/passenger.conf
-wget https://gist.githubusercontent.com/scatterp2/5aab2adb578020f93d0f2146e0aac61b/raw/2b2e5fc7e8a95eea3d4b791217c5d1e5b848cd43/bitcoin.conf
+wget https://gist.githubusercontent.com/peatioproject/554ee583e64723c225bd76c43911d24b/raw/9903c978a42ee07978d6bfed0384c784b1462467/passenger.conf
+wget https://gist.githubusercontent.com/peatioproject/ec531edd2c57e6993d8d7a60034b8186/raw/cc3bf541495d44cbe69b17a6d755432037b4efae/bitcoin.conf
 sudo apt-get remove -y apache2
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev imagemagick gsfonts nodejs nginx-extras redis-server software-properties-common python-software-properties nano dialog vim
@@ -61,7 +61,7 @@ echo "export RAILS_ENV=production" >> ~/.bashrc
 source ~/.bashrc
 mkdir -p ~/peatio
 #git clone https://github.com/ctubio/Krypto-trading-bot.git ~/K
-git clone https://github.com/scatterp/peatio.git ~/peatio/current
+git clone https://github.com/peatioproject/peatio.git ~/peatio/current
 #git checkout testing01
 cd ~/peatio/current/
 pwd
@@ -80,15 +80,6 @@ sudo /etc/init.d/mysql start
 bundle exec rake db:setup
 bundle exec rake assets:precompile
 pwd
-#cd /home/deploy/K/
-#pwd
-#make install
-#cd ..
-#git clone https://github.com/scatterp3/peatio.git ~/jpeatio/current
-#cd ~/jpeatio/current
-#rbenv global jruby-9.1.13.0
-#gem install bundler
-#bundle install
 sudo rm /etc/nginx/sites-enabled/default
 sudo ln -s /home/deploy/peatio/current/config/nginx.conf /etc/nginx/conf.d/peatio.conf
 sudo add-apt-repository ppa:certbot/certbot
