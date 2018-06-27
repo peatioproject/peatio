@@ -48,10 +48,7 @@ sudo apt-get update
 
 # Install Passenger + Nginx
 sudo apt-get install -y --allow-unauthenticated nginx-extras passenger
-#bitcoind
 sudo cp passenger.conf /etc/nginx/passenger.conf
-#sudo echo "include  /etc/nginx/passenger.conf;" >> /etc/nginx/nginx.conf
-#echo "include  /etc/nginx/passenger.conf;" |sudo tee -a /etc/nginx/nginx.conf
 cp /etc/nginx/nginx.conf .
 sed -i '64i\passenger_root /usr/lib/ruby/vendor_ruby/phusion_passenger/locations.ini;' nginx.conf
 sed -i '65i\passenger_ruby /home/deploy/.rbenv/shims/ruby;' nginx.conf
@@ -60,12 +57,9 @@ echo "remaining steps 10"
 echo "export RAILS_ENV=production" >> ~/.bashrc
 source ~/.bashrc
 mkdir -p ~/peatio
-#git clone https://github.com/ctubio/Krypto-trading-bot.git ~/K
 git clone https://github.com/peatioproject/peatio.git ~/peatio/current
-#git checkout testing01
 cd ~/peatio/current/
 pwd
-#sudo apt-get install -y ruby-bundler
 bundle install --without development test --path vendor/bundle
 bin/init_config
 dialog --msgbox "enter pusher <US1> settings and save" 10 20
@@ -88,7 +82,6 @@ sudo apt-get install -y python-certbot-nginx
 sudo service nginx stop
 sudo service nginx start
 bundle exec rake daemons:start
-#sudo service nginx status
 bundle exec rake daemons:status
 mv pc ..
 echo "you can now setup ssl optionally start bitcoind if you have over 2gb or visit the website (its up and running)"

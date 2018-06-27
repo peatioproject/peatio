@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/scatterp/unread.git
+  remote: git://github.com/peatioproject/unread.git
   revision: b8fa0502e9558c93388a104bcbe20376cf43027d
   specs:
     unread (0.4.0)
