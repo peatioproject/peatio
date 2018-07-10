@@ -21,11 +21,7 @@ en:
       deposits/bank: Deposit Bank
       withdraws/bank: Withdraw Bank
       withdraws/satoshi: Withdraw Bitcoin
-      withdraws/realpointcoin: Withdraw RealPointCoin
       withdraws/litecoin: Withdraw Litecoin
-      withdraws/blackcoin: Withdraw Blackcoin
-      withdraws/peercoin: Withdraw Peercoin
-      withdraws/tritiumcoin: Withdraw Tritium
     attributes:
       api_token:
         access_key: Access Key
@@ -179,31 +175,7 @@ en:
         amount: Amount
         confirmations: Confirmation
         aasm_state_text: State
-      deposits/realpointcoin:
-        created_at: Created At
-        txid: Transaction ID
-        amount: Amount
-        confirmations: Confirmation
-        aasm_state_text: State
       deposits/litecoin:
-        created_at: Created At
-        txid: Transaction ID
-        amount: Amount
-        confirmations: Confirmation
-        aasm_state_text: State
-      deposits/peercoin:
-        created_at: Created At
-        txid: Transaction ID
-        amount: Amount
-        confirmations: Confirmation
-        aasm_state_text: State
-      deposits/blackcoin:
-        created_at: Created At
-        txid: Transaction ID
-        amount: Amount
-        confirmations: Confirmation
-        aasm_state_text: State
-      deposits/tritiumcoin:
         created_at: Created At
         txid: Transaction ID
         amount: Amount
@@ -223,63 +195,7 @@ en:
         amount: Amount
         remark: Remark
         fee: Fee
-      withdraws/realpointcoin:
-        id: ID
-        member_name: Account
-        currency_obj_key_text: Currency
-        state_and_actions: State/Action
-        fund_extra_text: Withdraw Label
-        fund_extrat: Withdraw Label
-        fund_source: Bank
-        fund_uid: Account
-        created_at: Created At
-        sum: Amount
-        amount: Amount
-        remark: Remark
-        fee: Fee
       withdraws/litecoin:
-        id: ID
-        member_name: Account
-        currency_obj_key_text: Currency
-        state_and_actions: State/Action
-        fund_extra_text: Withdraw Label
-        fund_extrat: Withdraw Label
-        fund_source: Bank
-        fund_uid: Account
-        created_at: Created At
-        sum: Amount
-        amount: Amount
-        remark: Remark
-        fee: Fee
-      withdraws/peercoin:
-        id: ID
-        member_name: Account
-        currency_obj_key_text: Currency
-        state_and_actions: State/Action
-        fund_extra_text: Withdraw Label
-        fund_extrat: Withdraw Label
-        fund_source: Bank
-        fund_uid: Account
-        created_at: Created At
-        sum: Amount
-        amount: Amount
-        remark: Remark
-        fee: Fee
-      withdraws/blackcoin:
-        id: ID
-        member_name: Account
-        currency_obj_key_text: Currency
-        state_and_actions: State/Action
-        fund_extra_text: Withdraw Label
-        fund_extrat: Withdraw Label
-        fund_source: Bank
-        fund_uid: Account
-        created_at: Created At
-        sum: Amount
-        amount: Amount
-        remark: Remark
-        fee: Fee
-      withdraws/tritiumcoin:
         id: ID
         member_name: Account
         currency_obj_key_text: Currency
@@ -353,31 +269,7 @@ en:
               blank: Please enter your withdrawal address
               invalid: Invalid withdrawals address, please review.
               ismine: Please use a new address.
-        withdraws/realpointcoin:
-          attributes:
-            fund_uid:
-              blank: Please enter your withdrawal address
-              invalid: Invalid withdrawals address, please review.
-              ismine: Please use a new address.
         withdraws/litecoin:
-          attributes:
-            fund_uid:
-              blank: Please enter your withdrawal address
-              invalid: Invalid withdrawals address, please review.
-              ismine: Please use a new address.
-        withdraws/peercoin:
-          attributes:
-            fund_uid:
-              blank: Please enter your withdrawal address
-              invalid: Invalid withdrawals address, please review.
-              ismine: Please use a new address.
-        withdraws/blackcoin:
-          attributes:
-            fund_uid:
-              blank: Please enter your withdrawal address
-              invalid: Invalid withdrawals address, please review.
-              ismine: Please use a new address.
-        withdraws/tritiumcoin:
           attributes:
             fund_uid:
               blank: Please enter your withdrawal address
@@ -424,38 +316,15 @@ en:
     psbc: Postal Savings Bank of China
   market:
     currency:
-      eur: EUR
       btc: BTC
-      eur: EUR
-      doge: DOGE
-      pts: PTS
       ltc: LTC
       usd: USD
       eur: EUR
-      ppc: PPC
-      blk: BLK
-      rpt: RPT
-      trt: TRT
-      bcc: BCC
-      eth: ETH
-      zec: ZEC
-      bts: BTS
-      etc: ETC
   currency:
     satoshi:
       key: BTC
       code: BTC
       name: Bitcoin
-      format: '0,0.0000'
-    bitsharesx:
-      key: BTS
-      code: BTSX
-      name: BitsharesX
-      format: '0,0.0000'
-    etc:
-      key: ETC
-      code: ETC
-      name: ETC
       format: '0,0.0000'
     renminbi:
       key: CNY
@@ -466,36 +335,6 @@ en:
       code: EUR
       name: European Euro
       format: '0,0.00'
-    dogecoin:
-      key: DOG
-      code: DOGE
-      name: Dogecoin
-      format: '0,0.0000'
-    bcc:
-      key: BCC
-      code: BCC
-      name: BCC
-      format: '0,0.0000'
-    zec:
-      key: ZEC
-      code: ZEC
-      name: ZEC
-      format: '0,0.0000'
-    bts:
-      key: BTS
-      code: BTS
-      name: BTS
-      format: '0,0.0000'
-    ether:
-      key: ETH
-      code: ETH
-      name: Ethereum
-      format: '0,0.0000' 
-    protoshare:
-      key: PTS
-      code: PTS
-      name: Protoshare
-      format: '0,0.0000'
     dolars:
       key: USD
       code: USD
@@ -511,28 +350,6 @@ en:
       code: LTC
       name: Litecoin
       format: '0,0.0000'
-    peercoin:
-      key: PPC
-      code: PPC
-      name: Peercoin
-      format: '0,0.0000'
-    blackcoin:
-      key: BLK
-      code: BLK
-      name: BlackCoin
-      format: '0,0.0000'
-    realpointcoin:
-      key: RPT
-      code: RPT
-      name: RealPointCoin
-      format: '0,0.0000'
-    tritiumcoin:
-      key: TRT
-      code: TRT
-      name: Tritiumcoin
-      format: '0,0.0000'
-
-
 
   datagrid:
     empty: no data found
@@ -679,45 +496,10 @@ en:
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
-    ether:
-      key: ethereum
-      title: Ethereum Deposits
-      intro: Deposit Ethereum from your own wallet address to Tradealtcoin account
-      latency: 1 confirmation
-      transfer: Manual
-      go: Deposit
     litecoin:
       key: Litecoin Chain
       title: Litecoin Deposits
       intro: Deposit litecoin from your own wallet address to Peatio account
-      latency: 1 confirmation
-      transfer: Manual
-      go: Deposit
-    peercoin:
-      key: Peercoin Chain
-      title: Peercoin Deposits
-      intro: Deposit peercoin from your own wallet address to Peatio account
-      latency: 1 confirmation
-      transfer: Manual
-      go: Deposit
-    blackcoin:
-      key: Blackcoin Chain
-      title: Blackcoin Deposits
-      intro: Deposit blackcoin from your own wallet address to Peatio account
-      latency: 1 confirmation
-      transfer: Manual
-      go: Deposit
-    realpointcoin:
-      key: RealPointCoin Chain
-      title: RealPointCoin Deposits
-      intro: Deposit realpointcoin from your own wallet address to Peatio account
-      latency: 1 confirmation
-      transfer: Manual
-      go: Deposit
-    tritiumcoin:
-      key: Tritiumcoin Chain
-      title: Tritium Deposits
-      intro: Deposit tritium from your own wallet address to Peatio account
       latency: 1 confirmation
       transfer: Manual
       go: Deposit
@@ -735,19 +517,7 @@ en:
       satoshis:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
-      realpointcoins:
-        gen_address:
-          require_transaction: it can't generate new address if it hasn't been used.
       litecoins:
-        gen_address:
-          require_transaction: it can't generate new address if it hasn't been used.
-      blackcoins:
-        gen_address:
-          require_transaction: it can't generate new address if it hasn't been used.
-      peercoins:
-        gen_address:
-          require_transaction: it can't generate new address if it hasn't been used.
-      tritiumcoins:
         gen_address:
           require_transaction: it can't generate new address if it hasn't been used.
       banks:
@@ -863,59 +633,7 @@ en:
           manage_fund_source: Manage Fund Source
         create:
           notice: Withdrawal request successfully submitted. Use the info below to complete the bank transfer.
-      realpointcoins:
-        destroy:
-          notice: Withdraw been canceled, frozen balance has returned to your account
-        update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
-          alert_two_factor: Two-Factor Authentication error
-        new:
-          submit: Submit
-          allin: All-In
-          fund_source_label: Label
-          manage_fund_source: Manage Fund Source
-        create:
-          notice: Withdrawal request successfully submitted. Use the info below to complete the bank transfer.
       litecoins:
-        destroy:
-          notice: Withdraw been canceled, frozen balance has returned to your account
-        update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
-          alert_two_factor: Two-Factor Authentication error
-        new:
-          submit: Submit
-          allin: All-In
-          fund_source_label: Label
-          manage_fund_source: Manage Fund Source
-        create:
-          notice: Withdrawal request successfully submitted. Use the info below to complete the bank transfer.
-      blackcoins:
-        destroy:
-          notice: Withdraw been canceled, frozen balance has returned to your account
-        update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
-          alert_two_factor: Two-Factor Authentication error
-        new:
-          submit: Submit
-          allin: All-In
-          fund_source_label: Label
-          manage_fund_source: Manage Fund Source
-        create:
-          notice: Withdrawal request successfully submitted. Use the info below to complete the bank transfer.
-      peercoins:
-        destroy:
-          notice: Withdraw been canceled, frozen balance has returned to your account
-        update:
-          notice: Withdraw request is submit successful, we will process it as soon as possible
-          alert_two_factor: Two-Factor Authentication error
-        new:
-          submit: Submit
-          allin: All-In
-          fund_source_label: Label
-          manage_fund_source: Manage Fund Source
-        create:
-          notice: Withdrawal request successfully submitted. Use the info below to complete the bank transfer.
-      tritiumcoins:
         destroy:
           notice: Withdraw been canceled, frozen balance has returned to your account
         update:
@@ -996,27 +714,15 @@ en:
         liability-proof: Proof of Liabilities
         btc-assets: BTC Assets
         ltc-assets: LTC Assets
-        blk-assets: BLK Assets
-        ppc-assets: PPC Assets
-        rpt-assets: RPT Assets
-        trt-assets: TRT Assets
         cny-assets: CNY Assets
         eur-assets: EUR Assets
       liability_tabs:
         verify-btc: Verify My BTC Assets
         verify-ltc: Verify My LTC Assets
-        verify-blk: Verify My BLK Assets
-        verify-ppc: Verify My PPC Assets
-        verify-rpt: Verify My RPT Assets
-        verify-trt: Verify My TRT Assets
         verify-cny: Verify My CNY Assets
         verify-eur: Verify My EUR Assets
         btc-assets-total: 'Total BTC assets of exchange: '
         ltc-assets-total: 'Total LTC assets of exchange: '
-        ppc-assets-total: 'Total PPC assets of exchange: '
-        blk-assets-total: 'Total BLK assets of exchange: '
-        rpt-assets-total: 'Total RPT assets of exchange: '
-        trt-assets-total: 'Total TRT assets of exchange: '
         cny-assets-total: 'Total CNY assets of exchange: '
         eur-assets-total: 'Total EUR assets of exchange: '
       liability_proof:
@@ -1041,26 +747,6 @@ en:
         intro: All of exchange's LTC assets are listed here.
         total: Total LTC Assets
         address: Address
-      ppc_assets:
-        title: PPC Assets
-        intro: All of exchange's PPC assets are listed here.
-        total: Total PPC Assets
-        address: Address
-      blk_assets:
-        title: BLK Assets
-        intro: All of exchange's BLK assets are listed here.
-        total: Total BLK Assets
-        address: Address
-      rpt_assets:
-        title: RPT Assets
-        intro: All of exchange's RPT assets are listed here.
-        total: Total RPT Assets
-        address: Address
-      trt_assets:
-        title: TRT Assets
-        intro: All of exchange's TRT assets are listed here.
-        total: Total TRT Assets
-        address: Address
       cny_assets:
         title: CNY Assets
         intro: All of exchange's CNY assets are listed here.
@@ -1077,20 +763,9 @@ en:
         account_history: Account History
         eur_format: '0.00'
         cny_format: '0.00'
-        eur_format: '0.00'
         btc_format: '0.00000000'
         ltc_format: '0.00000000'
-        ppc_format: '0.00000000'
-        blk_format: '0.00000000'
-        rpt_format: '0.00000000'
-        trt_format: '0.00000000'
         reason:
-          eur:
-            strike_add: Plus
-            strike_sub: Sub
-            deposit: Deposit
-            withdraw: Withdraw
-            fix: Fix
           eur:
             strike_add: Plus
             strike_sub: Sub
@@ -1104,30 +779,6 @@ en:
             withdraw: Withdraw
             fix: Fix
           ltc:
-            strike_add: Plus
-            strike_sub: Sub
-            deposit: Deposit
-            withdraw: Withdraw
-            fix: Fix
-          ppc:
-            strike_add: Plus
-            strike_sub: Sub
-            deposit: Deposit
-            withdraw: Withdraw
-            fix: Fix
-          blk:
-            strike_add: Plus
-            strike_sub: Sub
-            deposit: Deposit
-            withdraw: Withdraw
-            fix: Fix
-          rpt:
-            strike_add: Plus
-            strike_sub: Sub
-            deposit: Deposit
-            withdraw: Withdraw
-            fix: Fix
-          trt:
             strike_add: Plus
             strike_sub: Sub
             deposit: Deposit
@@ -1177,12 +828,7 @@ en:
         eur_html: "<i class='fa fa-check'></i><span>EUR Markets</span>"
         btc_html: "<i class='fa fa-check'></i><span>BTC Markets</span>"
         usd_html: "<i class='fa fa-check'></i><span>USD Markets</span>"
-        eur_html: "<i class='fa fa-check'></i><span>EUR Markets</span>"
         ltc_html: "<i class='fa fa-check'></i><span>LTC Markets</span>"
-        ppc_html: "<i class='fa fa-check'></i><span>PPC Markets</span>"
-        blk_html: "<i class='fa fa-check'></i><span>BLK Markets</span>"
-        rpt_html: "<i class='fa fa-check'></i><span>RPT Markets</span>"
-        trt_html: "<i class='fa fa-check'></i><span>TRT Markets</span>"
         price: Price
         change: "24h %"
       range_switch:
@@ -1364,13 +1010,8 @@ en:
         title: "%{icon} %{c} Account"
         cny_format: '0.00'
         eur_format: '0.00'
-        eur_format: '0.00'
         btc_format: '0.00000000'
         ltc_format: '0.00000000'
-        ppc_format: '0.00000000'
-        blk_format: '0.00000000'
-        rpt_format: '0.00000000'
-        trt_format: '0.00000000'
         total: Total
   guides:
     private:
@@ -1470,19 +1111,7 @@ en:
         satoshi:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
-        realpointcoin:
-          sum: Minimum amount 0.001
-          fund_extra: Enter a label for this address (optional)
         litecoin:
-          sum: Minimum amount 0.001
-          fund_extra: Enter a label for this address (optional)
-        peercoin:
-          sum: Minimum amount 0.001
-          fund_extra: Enter a label for this address (optional)
-        blackcoin:
-          sum: Minimum amount 0.001
-          fund_extra: Enter a label for this address (optional)
-        tritiumcoin:
           sum: Minimum amount 0.001
           fund_extra: Enter a label for this address (optional)
     hints:
@@ -1507,15 +1136,7 @@ en:
           fund_extra: If your bank is no longer in the list, please contact customer service
         satoshi:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
-        realpointcoin:
-          sum: "<a target='_balance' href='#'>Fee structure</a>"
         litecoin:
-          sum: "<a target='_balance' href='#'>Fee structure</a>"
-        peercoin:
-          sum: "<a target='_balance' href='#'>Fee structure</a>"
-        blackcoin:
-          sum: "<a target='_balance' href='#'>Fee structure</a>"
-        tritiumcoin:
           sum: "<a target='_balance' href='#'>Fee structure</a>"
     creating: Creating...
     updating: Updating...
@@ -1566,38 +1187,10 @@ en:
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
-        realpointcoin:
-          fee: Fee
-          sum: Amount
-          fund_uid: RealPointCoin Address
-          fund_extra: Label
-          account_balance: Account Balance
-          member_name: Account
         litecoin:
           fee: Fee
           sum: Amount
           fund_uid: Litecoin Address
-          fund_extra: Label
-          account_balance: Account Balance
-          member_name: Account
-        peercoin:
-          fee: Fee
-          sum: Amount
-          fund_uid: Peercoin Address
-          fund_extra: Label
-          account_balance: Account Balance
-          member_name: Account
-        blackcoin:
-          fee: Fee
-          sum: Amount
-          fund_uid: Blackcoin Address
-          fund_extra: Label
-          account_balance: Account Balance
-          member_name: Account
-        tritiumcoin:
-          fee: Fee
-          sum: Amount
-          fund_uid: Tritiumcoin Address
           fund_extra: Label
           account_balance: Account Balance
           member_name: Account
@@ -1622,31 +1215,7 @@ en:
         index:
           accept: Accept
           accept_confirm: Confirm deposit?
-      realpointcoins:
-        update:
-          notice: The deposit was successful.
-        index:
-          accept: Accept
-          accept_confirm: Confirm deposit?
       litecoins:
-        update:
-          notice: The deposit was successful.
-        index:
-          accept: Accept
-          accept_confirm: Confirm deposit?
-      blackcoins:
-        update:
-          notice: The deposit was successful.
-        index:
-          accept: Accept
-          accept_confirm: Confirm deposit?
-      peercoins:
-        update:
-          notice: The deposit was successful.
-        index:
-          accept: Accept
-          accept_confirm: Confirm deposit?
-      tritiumcoins:
         update:
           notice: The deposit was successful.
         index:
@@ -1739,63 +1308,7 @@ en:
           withdraw: Withdrawals
         update:
           notice: Withdraw was made
-      realpointcoins:
-        index:
-          one: Pending withdrawals
-          all: Last 24 hours
-          empty: No data
-        show:
-          process: Accepted
-          succeed: Withdraw
-          reject: Reject
-          succeed_confirm: Process withdrawal?
-          reject_confirm: Reject withdrawal?
-          withdraw: Withdrawals
-        update:
-          notice: Withdraw was made
       litecoins:
-        index:
-          one: Pending withdrawals
-          all: Last 24 hours
-          empty: No data
-        show:
-          process: Accepted
-          succeed: Withdraw
-          reject: Reject
-          succeed_confirm: Process withdrawal?
-          reject_confirm: Reject withdrawal?
-          withdraw: Withdrawals
-        update:
-          notice: Withdraw was made
-      peercoins:
-        index:
-          one: Pending withdrawals
-          all: Last 24 hours
-          empty: No data
-        show:
-          process: Accepted
-          succeed: Withdraw
-          reject: Reject
-          succeed_confirm: Process withdrawal?
-          reject_confirm: Reject withdrawal?
-          withdraw: Withdrawals
-        update:
-          notice: Withdraw was made
-      blackcoins:
-        index:
-          one: Pending withdrawals
-          all: Last 24 hours
-          empty: No data
-        show:
-          process: Accepted
-          succeed: Withdraw
-          reject: Reject
-          succeed_confirm: Process withdrawal?
-          reject_confirm: Reject withdrawal?
-          withdraw: Withdrawals
-        update:
-          notice: Withdraw was made
-      tritiumcoins:
         index:
           one: Pending withdrawals
           all: Last 24 hours
@@ -1815,31 +1328,7 @@ en:
       accepted: Accepted
       checked: Checked
       warning: Warning
-  deposits/realpointcoin:
-    aasm_state:
-      submitted: Submitted
-      accepted: Accepted
-      checked: Checked
-      warning: Warning
   deposits/litecoin:
-    aasm_state:
-      submitted: Submitted
-      accepted: Accepted
-      checked: Checked
-      warning: Warning
-  deposits/blackcoin:
-    aasm_state:
-      submitted: Submitted
-      accepted: Accepted
-      checked: Checked
-      warning: Warning
-  deposits/peercoin:
-    aasm_state:
-      submitted: Submitted
-      accepted: Accepted
-      checked: Checked
-      warning: Warning
-  deposits/tritiumcoin:
     aasm_state:
       submitted: Submitted
       accepted: Accepted
@@ -1897,39 +1386,7 @@ en:
       member_name: Member
       state_and_actions: State/Actions
       currency_obj_key_text: Currency
-    realpointcoin:
-      amount: Amount
-      txid: TxId
-      created_at: Created At
-      confirmations: Confirmations
-      member_name: Member
-      state_and_actions: State/Actions
-      currency_obj_key_text: Currency
     litecoin:
-      amount: Amount
-      txid: TxId
-      created_at: Created At
-      confirmations: Confirmations
-      member_name: Member
-      state_and_actions: State/Actions
-      currency_obj_key_text: Currency
-    blackcoin:
-      amount: Amount
-      txid: TxId
-      created_at: Created At
-      confirmations: Confirmations
-      member_name: Member
-      state_and_actions: State/Actions
-      currency_obj_key_text: Currency
-    peercoin:
-      amount: Amount
-      txid: TxId
-      created_at: Created At
-      confirmations: Confirmations
-      member_name: Member
-      state_and_actions: State/Actions
-      currency_obj_key_text: Currency
-    tritiumcoin:
       amount: Amount
       txid: TxId
       created_at: Created At
@@ -1969,13 +1426,8 @@ en:
       usd: USD
       eur: EUR
       cny: CNY
-      eur: EUR
       btc: BTC
       ltc: LTC
-      ppc: PPC
-      blk: BLK
-      rpt: RPT
-      trt: TRT
     order:
       state:
         done: DONE
@@ -2003,11 +1455,7 @@ en:
     fund_source:
       category:
         satoshi: Bitcoin
-        realpointcoin: RealPointCoin
         litecoin: Litecoin
-        blackcoin: Blackcoin
-        peercoin: PeerCoin
-        tritiumcoin: Tritiumcoin
         bank: Bank
     id_document:
       id_document_type:
@@ -2468,34 +1916,6 @@ en:
       latency: 30 minutes
       transfer: Manual
       go: Withdraw
-    peercoin:
-      key: Peercoin_Chain
-      title: Peercoin Blockchain
-      intro: Withdraw Peercoin to your own Peercoin wallet
-      latency: 30 minutes
-      transfer: Manual
-      go: Withdraw
-    blackcoin:
-      key: Blackcoin_Chain
-      title: Blackcoin Blockchain
-      intro: Withdraw Blackcoin to your own Blackcoin wallet
-      latency: 30 minutes
-      transfer: Manual
-      go: Withdraw
-    realpointcoin:
-      key: Realpointcoin_Chain
-      title: Realpointcoin Blockchain
-      intro: Withdraw Realpointcoin to your own Realpointcoin wallet
-      latency: 30 minutes
-      transfer: Manual
-      go: Withdraw
-    tritiumcoin:
-      key: Tritiumcoin_Chain
-      title: Tritium Blockchain
-      intro: Withdraw Tritium to your own Tritium wallet
-      latency: 30 minutes
-      transfer: Manual
-      go: Withdraw
   withdraws:
     invalid_address: is not valid. You can not withdraw to this address.
   withdraws/bank:
@@ -2522,55 +1942,7 @@ en:
       almost_done: Almost Done
       canceled: Cancelled
       failed: Failed
-  withdraws/realpointcoin:
-    aasm_state:
-      submitting: Submitting
-      submitted: Submitted
-      rejected: Rejected
-      accepted: Accepted
-      suspect: Suspect
-      processing: processing
-      done: Done
-      almost_done: Almost Done
-      canceled: Cancelled
-      failed: Failed
   withdraws/litecoin:
-    aasm_state:
-      submitting: Submitting
-      submitted: Submitted
-      rejected: Rejected
-      accepted: Accepted
-      suspect: Suspect
-      processing: processing
-      done: Done
-      almost_done: Almost Done
-      canceled: Cancelled
-      failed: Failed
-  withdraws/blackcoin:
-    aasm_state:
-      submitting: Submitting
-      submitted: Submitted
-      rejected: Rejected
-      accepted: Accepted
-      suspect: Suspect
-      processing: processing
-      done: Done
-      almost_done: Almost Done
-      canceled: Cancelled
-      failed: Failed
-  withdraws/peercoin:
-    aasm_state:
-      submitting: Submitting
-      submitted: Submitted
-      rejected: Rejected
-      accepted: Accepted
-      suspect: Suspect
-      processing: processing
-      done: Done
-      almost_done: Almost Done
-      canceled: Cancelled
-      failed: Failed
-  withdraws/tritiumcoin:
     aasm_state:
       submitting: Submitting
       submitted: Submitted
