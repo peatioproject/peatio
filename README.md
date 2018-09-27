@@ -20,5 +20,5 @@ We can add following features:
 Contact:
 =====================================
 
-Email: peatioproject@gmail.com
-Skype: peatioproject
+- Email: peatioproject@gmail.com
+- Skype: peatioproject
